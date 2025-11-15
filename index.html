@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Basic Webstie SEO -->
+    <meta name="title" content="Audio Player">
+    <meta name="description"
+        content="A simple audio player with modern minimalistic UI, similar to Spotify, primarily for my guitar covers.">
+    <title>Audio Player</title>
+
+    <!-- CSS External Link -->
+    <link rel="stylesheet" href="./assets/styles.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./assets/fontawesome/fontawesome-free-6.4.2-web/css/all.min.css">
+</head>
+
+<body>
+    <div class="layout">
+        <div class="navbar">
+            <label for="older-picker">Select Folder</label>
+            <input type="file" id="folder-picker" webkitdirectory multiple accept="audio/*">
+            <ul id="song-list"></ul>
+        </div>
+        <div class="content-area">
+            <div class="audio-box">
+                <div class="audio-content">
+                    <!-- Audio Details -->
+                    <p id="audio-title">Title</p>
+                    <p id="artist">jelai</p>
+                    <audio id="audio" src="./assets/audio/Comfort Chain.mp3"></audio>
+
+                    <!-- Progress Bar -->
+                    <div id="progress-bar" class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+
+                    <!-- Controls -->
+                    <div class="controls">
+                        <button id="prev"><i class="fas fa-backward"></i></button>
+                        <button id="play-pause"><i class="fas fa-play"></i></button>
+                        <button id="next"><i class="fas fa-forward"></i></button>
+                    </div>
+
+                    <div class="time">
+                        <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS External Link -->
+    <script src="./assets/index.js"></script>
+</body>
+
+</html>
