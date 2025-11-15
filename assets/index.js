@@ -5,6 +5,7 @@ const progressFill = document.getElementById('progress-fill');
 const playPauseBtn = document.getElementById('play-pause');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
+const repeatBtn = document.getElementById('repeat');
 
 const currentTimeEl = document.getElementById('current-time');
 const durationEl = document.getElementById('duration');
@@ -71,7 +72,15 @@ playPauseBtn.addEventListener('click', () => {
     }
 });
 
-audio.addEventListener('ended', nextTrack);
+audio.addEventListener('ended', () => {
+    if (isRepeat) {
+        audio.currentTime = 0;
+        audio.play();
+    } else {
+        nextTrack();
+    }
+});
+
 
 // ---------------- Playlist Navigation ----------------
 prevBtn.addEventListener('click', () => {
@@ -103,7 +112,13 @@ function loadTrack(index) {
     });
 }
 
+// ---------------- Repeat Button ----------------
+let isRepeat = false;
 
+repeatBtn.addEventListener('click', () => {
+    isRepeat = !isRepeat;
+    repeatBtn.style.color = isRepeat ? 'green' : ''; // highlight when active
+});
 
 // ---------------- Time Formatting ----------------
 audio.addEventListener('loadedmetadata', () => {
