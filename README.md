@@ -17,7 +17,7 @@ A modern and lightweight audio player that allows users to play, organize, and m
 
 ## Screenshots
 
-![Player Screenshot](./assets/images/mp_screenshopt.png)
+![Player Screenshot](assets/images/mp_screenshot.png)
 
 
 ---
