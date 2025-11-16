@@ -1,6 +1,6 @@
-# 🎵 Music Player
+# 🎵 Audio Player
 
-A modern and lightweight music player that allows users to play, organize, and manage their music library seamlessly.
+A modern and lightweight audio player that allows users to play, organize, and manage their audio library seamlessly.
 
 ---
 
@@ -37,3 +37,8 @@ A modern and lightweight music player that allows users to play, organize, and m
 ```bash
 git clone https://github.com/yourusername/music-player.git
 cd music-player
+```
+
+2. Access via Netlify URL
+   [Click Here](je-audio-player.netlify.app)
+
