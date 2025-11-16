@@ -39,6 +39,7 @@ git clone https://github.com/yourusername/music-player.git
 cd music-player
 ```
 
-2. Access via Netlify URL
-   [Click Here](je-audio-player.netlify.app)
+2. Access via Netlify URL:
+   
+   [Click Here](https://je-audio-player.netlify.app/)
 
