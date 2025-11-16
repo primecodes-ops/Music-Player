@@ -27,7 +27,7 @@ folderInput.addEventListener('change', () => {
     songList.innerHTML = '';
     playlist.forEach((track, index) => {
         const li = document.createElement('li');
-        li.textContent = track.name.replace(/\.[^/.]+$/, ''); // Remove extension
+        li.textContent = track.name.replace(/\.[^/.]+$/, '');
         li.addEventListener('click', () => {
             currentIndex = index;
             loadTrack(currentIndex);
@@ -117,7 +117,7 @@ let isRepeat = false;
 
 repeatBtn.addEventListener('click', () => {
     isRepeat = !isRepeat;
-    repeatBtn.style.color = isRepeat ? 'green' : ''; // highlight when active
+    repeatBtn.classList.toggle('active'); // highlight when active
 });
 
 // ---------------- Time Formatting ----------------

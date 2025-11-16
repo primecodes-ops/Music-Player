@@ -166,6 +166,10 @@ body {
   transform: scale(1.1);
 }
 
+.audio-box .controls #repeat.active {
+  background: rgba(152, 67, 252, 1);
+}
+
 /* Song List */
 #folder-picker {
   margin-bottom: 1rem;
