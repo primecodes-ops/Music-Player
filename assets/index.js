@@ -115,9 +115,11 @@ function loadTrack(index) {
 // ---------------- Repeat Button ----------------
 let isRepeat = false;
 
+repeatBtn.classList.remove('active');
+
 repeatBtn.addEventListener('click', () => {
     isRepeat = !isRepeat;
-    repeatBtn.classList.toggle('active'); // highlight when active
+    repeatBtn.classList.toggle('active', isRepeat); // highlight when active
 });
 
 // ---------------- Time Formatting ----------------
